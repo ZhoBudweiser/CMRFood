@@ -49,3 +49,15 @@
     font-size: 14px;
     color: #999;
 }
+
+.cmr-caption {
+    height: 80px;
+    background-color: #333;
+    color: #dcdcdc;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.cmr-caption h1 {
+    line-height: 10px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/construction.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- shortcut -->
+        <div class="cmr-shortcut">
+            <!-- container -->
+            <nav class="container">
+                <ul class="fr">
+                    <li><a href="./index.html">Home</a>|</li>
+                    <li><a href="./construction.html">Construction</a>|</li>
+                    <li><a href="./Demo.html">Demo</a>|</li>
+                    <li><a href="./Download.html">Dowmload</a>|</li>
+                    <li><a href="https://github.com/ZhoBudweiser/CMRFood/issues">Q & A</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- caption -->
+    <div class="cmr-caption">
+        <h1>
+            Construction
+        </h1>
+    </div>
+
+    <!-- introduction -->
+    <div class="cmr-introduction">
+        <div class="container">
+            <!-- header -->
+            <div class="header">
+                <!-- left -->
+                <h2 class="fl">
+                    Introduction
+                </h2>
+            </div>
+            <!-- content -->
+            <div class="content">
+                We create and publicly release a new, large-scale Chinese structured recipe dataset (CMRFood), which
+                includes more than 70,000 recipes and 2 million images. Compared to previous datasets, CMRFood includes
+                more fine-grained information, such as nutrient content (calories, sugars, and fats) and recipe
+                attributes (e.g., craft, taste, time, difficulty, and cuisine). In the following subsections, we outline
+                how this dataset is collected and organized, and analyze its content.
+            </div>
+        </div>
+    </div>
+
+    <div class="cmr-introduction">
+        <div class="container">
+            <!-- header -->
+            <div class="header">
+                <!-- left -->
+                <h2 class="fl">
+                    Data Collection
+                </h2>
+            </div>
+            <!-- content -->
+            <div class="content">
+                These recipe images are collected from a Chinese recipe sharing website Meishijie. We process the data
+                through two pipelines, one extracting relevant text from raw HTML, and the other downloading linked
+                images. The data is then assembled into a one-row compact JSON data structure, where each data item
+                (recipe and image) is uniquely identified. As part of the extraction process data, excessive whitespace,
+                HTML entities and non-ASCII characters are removed from the recipe text.
+            </div>
+        </div>
+    </div>
+
+    <div class="cmr-introduction">
+        <div class="container">
+            <!-- header -->
+            <div class="header">
+                <!-- left -->
+                <h2 class="fl">
+                    Data Extension
+                </h2>
+            </div>
+            <!-- content -->
+            <div class="content">
+                Due to the lack of complete images for a single recipe, we choose to expand the number of complete
+                images. With the rapid growth of social networks and the Internet of Things (IOT), more than half of the
+                world's population is using the Internet. Many Internet users choose to share their images, recipes and
+                food information on social networking sites or professional food websites. We use the recipe name as an
+                index to download images from other recipe sharing sites, such as Meishizhongguo and Geogle search
+                engines. With these websites, we download a large number of images according to the recipe names,
+                enriching our dataset.
+            </div>
+        </div>
+    </div>
+
+    <div class="cmr-introduction">
+        <div class="container">
+            <!-- header -->
+            <div class="header">
+                <!-- left -->
+                <h2 class="fl">
+                    Dataset Construction
+                </h2>
+            </div>
+            <!-- content -->
+            <div class="content">
+                The content of the CMRFood dataset can be logically divided into two layers. The first layer is the
+                basic information of the text data, including titles, ingredient lists, preparation steps, suitable
+                people, a series of descriptions of nutritional ingredients, and notes with recipe attributes (such as
+                craft, taste, time, difficulty, and cuisine), which are provided as JSON text. The second layer builds
+                on the first layer and includes any images associated with the recipe (complete and step images), which
+                are provided in RGB in JPEG format.
+            </div>
+        </div>
+    </div>
+
+    <div class="cmr-introduction">
+        <div class="container">
+            <!-- header -->
+            <div class="header">
+                <!-- left -->
+                <h2 class="fl">
+                    Dataset Statistics
+                </h2>
+            </div>
+            <!-- content -->
+            <div class="content">
+                As the data comes from Internet users, it is necessary to be filtered. Our screening basis is as
+                follows:
+
+            <ul>
+                <li>(1) There are at least five cooking steps to ensure sufficient information is included.</li>
+                <li>(2) Each step has a text description and an image.</li>
+            </ul>
+
+            Filtered according to the condition that there are no less than five steps and each step has image-text
+            pairs, the total number of recipes is 71,110, with 2067,554 complete images and 657,757 step images.
+
+            The dataset adopts a two-level classification method. The first level is divided into Chinese cuisine,
+            home-cooked recipes, and local snacks.
+
+            <ul>
+                <li>(1) Chinese Cuisine
+                    Northwest cuisine, Fujian cuisine, Sichuan cuisine, Northeast cuisine, Hong Kong and Taiwan cuisine,
+                    Beijing cuisine, Yunnan-Guizhou cuisine, Huaiyang cuisine, Anhui cuisine, Hunan cuisine, Jiangxi
+                    cuisine, Hubei cuisine, Shandong cuisine, Guizhou cuisine, Guangxi cuisine, Jiangsu cuisine , other
+                    dishes, Shanxi cuisine, Yunnan cuisine, Halal cuisine.
+                </li>
+                <li>(2) Home-cooked recipes
+                    Porridge, soup, vegetarian dishes, staple food, hot pot, seafood, dried fruit snacks, cold dishes,
+                    drinks, hot dishes, beauty, snacks, slimming, microwave ovens, sauces, old people, maternity,
+                    marinated, pregnant women, Baby.
+                </li>
+                <li>(3) Local snacks
+                    Mongolian snacks, Shanxi snacks, Yunnan snacks, Hunan snacks, Hebei snacks, Henan snacks, special
+                    snacks, Shanghai snacks, Shandong snacks, Tianjin snacks, Chongqing snacks, Beijing snacks, Sichuan
+                    snacks, Jiangxi snacks, Jiangsu snacks, zhejiang snacks.
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <!-- copyright -->
+        <div class="cmr-copyright">
+            <div class="container">
+                <p>CopyRight © School of Computer Science and Information Engineering, Hefei University of Technology,
+                    Hefei, China</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -22,9 +22,9 @@
             <nav class="container">
                 <ul class="fr">
                     <li><a href="./index.html">Home</a>|</li>
-                    <li><a href="#">Constrction</a>|</li>
-                    <li><a href="#">Demo</a>|</li>
-                    <li><a href="#">Dowmload</a>|</li>
+                    <li><a href="./construction.html">Construction</a>|</li>
+                    <li><a href="./Demo.html">Demo</a>|</li>
+                    <li><a href="./Download.html">Dowmload</a>|</li>
                     <li><a href="https://github.com/ZhoBudweiser/CMRFood/issues">Q & A</a></li>
                 </ul>
             </nav>
@@ -48,18 +48,22 @@
             <ul class="list">
                 <li>
                     <div>
+                        <div class="pic"><img src="./images/front_0.jpg" alt=""></div>
+                        
                         <h3>Food Image-Text Pairs</h3>
                         <p>2<span>M</span></p>
                     </div>
                 </li>
                 <li>
                     <div>
+                        <div class="pic"><img src="./images/front_1.jpg" alt=""></div>
                         <h3>Recipes</h3>
                         <p>100<span>K</span></p>
                     </div>
                 </li>
                 <li>
                     <div>
+                        <div class="pic"><img src="./images/front_2.jpg" alt=""></div>
                         <h3>Images</h3>
                         <p>2.06<span>M</span></p>
                     </div>
@@ -77,26 +81,26 @@
                 Details <span>a new, large-scale Chinese structured recipe data corpus</span>
             </h2>
             <!-- 右边 -->
-            <a href="#" class="fr">more about this >> </a>
+            <a href="./construction.html" class="fr">more >> </a>
         </div>
             <!-- list -->
             <ul class="list">
                 <li>
                     <div>
-                        <h3>Food Image-Text Pairs</h3>
-                        <p>2<span>M</span></p>
+                        <h3>Data Collection</h3>
+                        <p>These recipe images are collected from a Chinese recipe sharing website Meishijie. We process the data through two pipelines: (1) Extracting relevant text from raw HTML. (2)Downloading linked images.</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <h3>Recipes</h3>
-                        <p>100<span>K</span></p>
+                        <h3>Data Extension</h3>
+                        <p>We use the recipe name as an index to download images from other recipe sharing sites, such as Meishizhongguo and Geogle search engines. With these websites, we download a large number of images according to the recipe names, enriching our dataset.</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <h3>Images</h3>
-                        <p>2.06<span>M</span></p>
+                        <h3>Dataset Construction</h3>
+                        <p>The first layer is the basic information of the text data, including titles, ingredient lists, preparation steps, which are provided as JSON text. The second layer includes any images associated with the recipe (complete and step images), which are provided in RGB in JPEG format.</p>
                     </div>
                 </li>
             </ul>
@@ -109,27 +113,27 @@
             <div class="header">
                 <!-- left -->
                 <h2 class="fl">
-                    Resources <span>to see more</span>
+                    Resources
                 </h2>
             </div>
             <!-- list -->
             <ul class="list">
                 <li>
-                    <a href="#">
+                    <a href="./construction.html">
                         <div class="iconfont icon-RectangleCopy1"></div>
-                        <h3>Constrction</h3>
+                        <h3>Construction</h3>
                         <p>Read our comprehensive datasheet documents</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./Demo.html">
                         <div class="iconfont icon-RectangleCopy3"></div>
                         <h3>Demo</h3>
                         <p>Demonstration shared here</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./Download.html">
                         <div class="iconfont icon-RectangleCopy2"></div>
                         <h3>Dowmload</h3>
                         <p>Download a copy of the dataset</p>
