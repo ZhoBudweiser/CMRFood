@@ -1,0 +1,51 @@
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* ------------------cmr-shortcut */
+.cmr-shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.cmr-shortcut .container {
+    height: 52px;
+    /* background-color: skyblue; */
+}
+
+.cmr-shortcut ul li {
+    float: left;
+
+    height: 52px;
+
+    line-height: 52px;
+    text-align: center;
+    color: #666;
+}
+
+.cmr-shortcut ul a {
+    margin: 0 16px;
+    color: #dcdcdc;
+}
+
+.cmr-shortcut li:last-child a {
+    margin-right: 0;
+}
+
+/* ------------------cmr-copyright */
+
+.cmr-copyright {
+    height: 68px;
+    background-color: #333;
+}
+
+.cmr-copyright .container {
+    height: 100%;
+    /* background-color: pink; */
+    padding-top: 21px;
+    text-align: center;
+
+    font-size: 14px;
+    color: #999;
+}
