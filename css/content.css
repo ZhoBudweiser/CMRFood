@@ -20,3 +20,25 @@
   line-height: 30px;
   text-indent: 2em;
 }
+.cmr-introduction .container .pic {
+  width: 100%;
+}
+.cmr-introduction .container .pic img {
+  width: 100%;
+}
+.cmr-introduction .container #code-block {
+  background: #2d2d2d;
+  color: #c9d1d9;
+  font-family: Consolas;
+  text-align: left;
+  padding: 1em;
+  padding-left: 0.8em;
+  margin: 1em;
+  border-radius: 5px;
+  counter-reset: line;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+}
