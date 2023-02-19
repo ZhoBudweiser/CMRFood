@@ -20,6 +20,9 @@
   line-height: 30px;
   text-indent: 2em;
 }
+.cmr-introduction .container .content a {
+  color: orangered;
+}
 .cmr-introduction .container .pic {
   width: 100%;
 }
